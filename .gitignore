@@ -1,0 +1,26 @@
+# Ignore vendor folder (Composer dependencies)
+vendor/
+
+# Ignore IDE / Editor files
+.vscode/
+.idea/
+*.suo
+*.user
+*.swp
+*.swo
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore error logs
+error_log
+php_errors.log
+php_lint_errors.txt
+
+# Depending on the application, you might want to ignore uploaded files 
+# uploads/
+# But I will leave it commented out so you can commit stock images or QR codes if needed.
+
+# Ignore external secrets configuration
+secrets.php

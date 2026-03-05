@@ -1,0 +1,181 @@
+/* Light Theme (Default) */
+.theme-light {
+    --primary: #2D5BFF;
+    --primary-dark: #1A46E0;
+    --secondary: #FF9E1A;
+    --accent: #34C759;
+    --danger: #FF3B30;
+    --warning: #FF9500;
+    --light: #F8F9FA;
+    --dark: #1C1C1E;
+    --gray: #8E8E93;
+    --background: #FFFFFF;
+    --card-bg: #F2F2F7;
+    --text-color: #1C1C1E;
+    --border-color: #E5E5E7;
+}
+
+/* Dark Theme */
+.theme-dark {
+    --primary: #2D5BFF;
+    --primary-dark: #1A46E0;
+    --secondary: #FF9E1A;
+    --accent: #34C759;
+    --danger: #FF3B30;
+    --warning: #FF9500;
+    --light: #2C2C2E;
+    --dark: #FFFFFF;
+    --gray: #8E8E93;
+    --background: #1C1C1E;
+    --card-bg: #2C2C2E;
+    --text-color: #FFFFFF;
+    --border-color: #3A3A3C;
+}
+
+/* Blue Theme */
+.theme-blue {
+    --primary: #2D5BFF;
+    --primary-dark: #1A46E0;
+    --secondary: #FF9E1A;
+    --accent: #34C759;
+    --danger: #FF3B30;
+    --warning: #FF9500;
+    --light: #E8F0FF;
+    --dark: #1C1C1E;
+    --gray: #8E8E93;
+    --background: #F0F5FF;
+    --card-bg: #FFFFFF;
+    --text-color: #1C1C1E;
+    --border-color: #D1E0FF;
+    --glass-bg: rgba(255, 255, 255, 0.8);
+}
+
+/* Midnight Theme */
+.theme-midnight {
+    --primary: #3752FF;
+    --primary-dark: #0012FF;
+    --secondary: #00F0FF;
+    --accent: #50FFAB;
+    --danger: #FF3D71;
+    --warning: #FFAA00;
+    --light: #0A0A0B;
+    --dark: #FFFFFF;
+    --gray: #A0A0A2;
+    --background: #000000;
+    --card-bg: #111112;
+    --text-color: #F8F9FA;
+    --border-color: #222224;
+    --glass-bg: rgba(17, 17, 18, 0.8);
+}
+
+/* Forest Theme */
+.theme-forest {
+    --primary: #2D6A4F;
+    --primary-dark: #1B4332;
+    --secondary: #D8F3DC;
+    --accent: #52B788;
+    --danger: #FF4D4D;
+    --warning: #FFB347;
+    --light: #F1F8E9;
+    --dark: #1B4332;
+    --gray: #6B705C;
+    --background: #F8F9FA;
+    --card-bg: #FFFFFF;
+    --text-color: #1B4332;
+    --border-color: #D8F3DC;
+    --glass-bg: rgba(255, 255, 255, 0.8);
+}
+
+/* Glassmorphism Theme */
+.theme-glass {
+    --primary: #6366F1;
+    --primary-dark: #4F46E5;
+    --secondary: #EC4899;
+    --accent: #10B981;
+    --danger: #EF4444;
+    --warning: #F59E0B;
+    --light: #F9FAFB;
+    --dark: #111827;
+    --gray: #6B7280;
+    --background: linear-gradient(135deg, #F3F4F6 0%, #E5E7EB 100%);
+    --card-bg: rgba(255, 255, 255, 0.7);
+    --text-color: #111827;
+    --border-color: rgba(255, 255, 255, 0.5);
+    --glass-bg: rgba(255, 255, 255, 0.4);
+}
+
+.theme-glass .settings-content,
+.theme-glass .settings-sidebar,
+.theme-glass .card,
+.theme-glass .notification-list {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+}
+
+
+/* Apply theme variables to elements */
+body {
+    background-color: var(--background);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    transition: background 0.3s ease;
+}
+
+.settings-sidebar,
+.settings-content {
+    background-color: var(--card-bg);
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--secondary);
+    transition: background-color 0.3s ease;
+}
+
+.form-control {
+    background-color: var(--background);
+    color: var(--text-color);
+    border-color: var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.settings-section h2 {
+    color: var(--text-color);
+    border-bottom-color: var(--border-color);
+}
+
+.form-group label {
+    color: var(--text-color);
+}
+
+.settings-menu-item {
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.settings-menu-item:hover:not(.active) {
+    background-color: rgba(45, 91, 255, 0.1);
+}
+
+.theme-option {
+    background-color: var(--background);
+    border-color: var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.alert-success {
+    background-color: rgba(52, 199, 89, 0.1);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.alert-error {
+    background-color: rgba(255, 59, 48, 0.1);
+    border-color: var(--danger);
+    color: var(--danger);
+}

@@ -1,0 +1,13 @@
+﻿git : fatal: unable to access 'https://github
+.com/castanaresmichellcastro-cmyk/waistoree.g
+it/': Could not resolve host: github.com
+At line:1 char:1
++ git push -u origin main 2>&1 | Out-File 
+-Encoding utf8 git_push_error ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified:  
+   (fatal: unable t...ost: github.com:Strin  
+  g) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandE 
+   rror
+ 
