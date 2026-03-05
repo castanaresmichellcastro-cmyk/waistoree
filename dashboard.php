@@ -9,10 +9,10 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 // Database connection - UPDATED FOR INFINITYFREE
-$servername = "localhost:3307";
-$username = "root";
-$password = "";
-$dbname = "waistore_db";
+$servername = getenv("DB_HOST") ?: "localhost:3307";
+$username = getenv("DB_USER") ?: "root";
+$password = getenv("DB_PASS") ?: "";
+$dbname = getenv("DB_NAME") ?: "waistore_db";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

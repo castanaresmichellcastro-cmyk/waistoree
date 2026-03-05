@@ -3,10 +3,10 @@ session_start();
 require_once 'vendor/autoload.php';
 
 // Database connection
-$servername = "localhost:3307";
-$username = "root";
-$password = "";
-$dbname = "waistore_db";
+$servername = getenv("DB_HOST") ?: "localhost:3307";
+$username = getenv("DB_USER") ?: "root";
+$password = getenv("DB_PASS") ?: "";
+$dbname = getenv("DB_NAME") ?: "waistore_db";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

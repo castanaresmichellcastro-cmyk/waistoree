@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost:3307";
-$username = "root"; // Default XAMPP username
-$password = ""; // Default XAMPP password
-$dbname = "waistore_db";
+$servername = getenv("DB_HOST") ?: "localhost:3307";
+$username = getenv("DB_USER") ?: "root"; // Default XAMPP username
+$password = getenv("DB_PASS") ?: ""; // Default XAMPP password
+$dbname = getenv("DB_NAME") ?: "waistore_db";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

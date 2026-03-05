@@ -1,9 +1,9 @@
 <?php
 // Database connection
 $host = 'localhost:3307';
-$dbname = 'waistore_db';
-$username = 'root';
-$password = '';
+$dbname = getenv("DB_NAME") ?: "waistore_db";
+$username = getenv("DB_USER") ?: "root";
+$password = getenv("DB_PASS") ?: "";
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
